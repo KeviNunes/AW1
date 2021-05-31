@@ -1,1 +1,398 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    
+    <!-- Tag <title> -->
+    <title>Atividade 3</title>
+    
+    <!-- Tag <meta> -->
+    <title>Atividade 3</title>  <!-- Define o conjunto de caracteres: -->
+    <meta name="description" content="Tags apresentadas nos slides 1 e 2">  <!-- Define a descrição do documento -->
+    <meta name="keywords" content="IFSP, AW1, HTML">    <!-- Define as palavras-chaves do documento -->
+    <meta name="author" content="Kevin Nunes">  <!-- Define o autor do documento HTML -->
+    
+    <!-- Define a largura da página e determina como escala 1 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Favicon - Tag <link> -->
+    <link rel="icon" href="https://pt.seaicons.com/wp-content/uploads/2016/05/success-icon.png" size="20x20">
+    
+</head>
+<body>
+    
+    <h1>Tags em HTML</h1>
+    <p>
+        Nesse documento HTML é apresentado as tags em HTML que foram apresentadas na disciplina de AW1
+        presentes nos slides 1 e 2.
+    </p>
+
+    <!-- Tag de títulos <h1> ao <h6> -->
+    <h2>Tag de títulos</h2>
+    <p>
+        Em HTML, há 6 níveis de títulos sendo o h1 o mais importante e o h6 o menos
+    </p>
+    <h3>Exemplos:</h3>
+        <ul>
+            <!-- h1 -->
+            <li>h1</li> <h1>Teste</h1>
+            <!-- h2 -->
+            <li>h2</li> <h2>Teste</h2>
+            <!-- h3 -->
+            <li>h3</li> <h3>Teste</h3>
+            <!-- h4 -->
+            <li>h4</li> <h4>Teste</h4>
+            <!-- h5 -->
+            <li>h5</li> <h5>Teste</h5>
+            <!-- h6 -->
+            <li>h6</li> <h6>Teste</h6>
+        </ul>
+
+    <!-- Tag <pre> -->
+    <h2>Tag de texto pré formatado:</h2>
+    <p>
+        A tag de inserção de um texto pré-formatado é "pre".
+    </p>
+    <h3>Por exemplo:</h3>
+    <li>Sem pre:</li>
+    <p>
+        Amor é fogo que arde sem se ver;
+        É ferida que dói, e não se sente;
+        É um contamento descontente;
+        É dor que desatina sem doer.
+    </p>
+    <li>Com pre:</li>
+    <p>
+        <pre>
+            Amor é fogo que arde sem se ver;
+            É ferida que dói, e não se sente;
+            É um contamento descontente;
+            É dor que desatina sem doer.
+        </pre>
+    </p>
+
+    <!-- Tag <ul> -->
+    <h2>Listas não ordenadas</h2>
+    <p>
+        As listas não ordenadas são elementos que são apresentados
+        como se fossem tópicos.
+    </p>
+    <p>
+        É possível alterar o formato do simbolo com o atributo style
+        este possuindo 4 opções: disc, circle, square e none.
+    </p>
+    <h3>Exemplo:</h3>
+    <ul>
+        <li>exemplo 1</li>
+        <li>exemplo 2</li>
+        <li>exemplo 3</li>
+    </ul>
+
+    <!-- Tag <ol> -->
+    <h2>Listas ordenadas</h2>
+    <p>
+        As listas ordenadas apresentam elementos em uma forma
+        sequencial.
+    </p>
+    <p>
+        É possível alterar a simbologia com o atributo type
+        este possuindo 5 opções: a, A, i, I e 1.
+    </p>
+    <h3>Exemplo:</h3>
+    <ul>
+        <li>Type="a"</li>
+            <!-- type a -->
+            <ol type="a">
+                <li>exmplo 1</li>
+                <li>exmplo 2</li>
+                <li>exmplo 3</li>
+            </ol>
+
+        <li>type="A"</li>
+            <!-- type A -->
+            <ol type="a">
+                <li>exmplo 1</li>
+                <li>exmplo 2</li>
+                <li>exmplo 3</li>                   
+            </ol>
+
+        <li>type="i"</li>
+            <!-- type i -->
+            <ol type="a">
+                <li>exmplo 1</li>
+                <li>exmplo 2</li>
+                <li>exmplo 3</li>                    
+            </ol>
+
+        <li>type="I"</li>
+            <!-- type I -->
+            <ol type="a">
+                <li>exmplo 1</li>
+                <li>exmplo 2</li>
+                <li>exmplo 3</li>                    
+            </ol>
+
+        <li>type="1"</li>
+            <!-- type 1 -->
+            <ol type="a">
+                <li>exmplo 1</li>
+                <li>exmplo 2</li>
+                <li>exmplo 3</li>                    
+            </ol>
+    </ul>
+
+    <!-- Tag <img> -->
+    <h2>Tag de imagem</h2>
+    <p>
+        As tags de imagem servem para inserir uma imagem
+        no documento HTML.
+    </p>
+    <p>
+        Os atributos da tag se resumem em src
+        (Referencia absoluta ou relativa da localização da 
+        imagem), alt (Texto alternativo), width (Comprimento) e height (Altura).
+    </p>
+    <h3>Exemplo:</h3>
+    <img alt="Imagem referente a HTML" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" width="300" height="200">
+
+    <!-- Tag <a> -->
+    <h2>Tag de links</h2>
+    <p>A tag serve para inserir links no documento HTML.</p>
+    <p>
+        Os atributos são: href (Link), target (Onde o link será aberto).
+        <br>O atributo target possui 4 opções:
+        <ul style="list-style-type: circle;">
+            <li>_blank: Abre o link em uma nova janela ou aba</li>
+            Exemplo: <!-- _blank -->
+            <a href="https://www.google.com" target="_blank">Google link</a><br><br>
+            <li>_self: Abre o link na mesma janela <strong>(Padrão)</strong></li>
+            Exemplo: <!-- _self -->
+            <a href="https://www.google.com" target="_self">Google link</a><br><br>
+            <li>_parent: Abre o link no quadro pai</li>
+            Exemplo: <!-- _parent -->
+            <a href="https://www.google.com" target="_parent">Google link</a><br><br>
+            <li>_top: Abre o link no corpo completo da janela</li>
+            Exemplo: <!-- _top -->
+            <a href="https://www.google.com" target="_top">Google link</a><br><br>
+    
+        </ul>
+    </p>
+
+    <!-- Tabelas -->
+    <h2>Tag table (Tabelas)</h2>
+    <p>
+        Uma tabela é definida por outras tags:
+        <ul>
+            <li>tr: Define uma linha</li>
+            <li>td: Define uma célula de dados</li>
+            <li>th: Define a célula de um cabeçalho</li>
+            <li>thead: Agrupa o conteúdo do cabeçalho</li>
+            <li>tbody: Agrupa o conteúdo do corpo</li>
+            <li>tfoot: Agrupa o conteúdo do rodapé</li>
+        </ul>
+    </p>
+    <h4>Exemplo:</h4>
+    <table>
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Gabinete</th>
+                <th>100 R$</th>
+            </tr>
+            <tr>
+                <th>Processador intel i7</th>
+                <th>500 R$</th>
+            </tr>
+            <tr>
+                <th>Motherboard</th>
+                <th>230 R$</th>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Valor total</th>
+                <th>830 R$</th>
+            </tr>
+        </tfoot>
+    </table>
+    <h3>Expansão de coluna da tabela</h3>
+    <p>Com o atributo colspan da tag th é possível redimensionar o tamanho de uma coluna/célula</p>
+    <h4>Exemplo: </h4>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th colspan="2">Telefone</th>
+        </tr>
+        <tr>
+            <td>Kevin</td>
+            <td>(11)5555-5555</td>
+            <td>(11)7777-7777</td>
+        </tr>
+    </table>
+    <h3>Expansão de linha da tabela</h3>
+    <p>Com o atributo rowspan da tag th é possível redimensionar o tamanho de uma linha</p>
+    <h4>Exemplo: </h4>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <td>Kevin</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Telefone</th>
+            <td>(11)5555-5555</td>
+        </tr>
+        <tr>
+            <td>(11)7777-7777</td>
+        </tr>
+    </table>
+
+    <!-- Formatação especial -->
+    <h2>Formatação especial</h2>
+    <p>Definição de textos com significados especiais</p>
+    <p>tags:
+        <ul>
+            <li>b ou strong: Negrito</li>
+            <li>i ou em: Itálico</li>
+            <li>mark: Texto marcado</li>
+            <li>small: Texto pequeno</li>
+            <li>del: Texto excluído</li>
+            <li>ins: Texto inserido</li>
+            <li>sub: Texto subscrito</li>
+            <li>sup: Texto sobrescrito</li>
+        </ul>
+    </p>
+    <h3>Exemplos:</h3>
+    <p>
+        <ul>
+            <li>texto <b>negrito</b>.</li>
+            <li>texto <em>italico</em>.</li>
+            <li>texto <small>pequeno</small>.</li>
+            <li>texto <mark>marcado</mark>.</li>
+            <li>texto <del>excluído</del>.</li>
+            <li>texto <ins>sublinhado</ins>.</li>
+            <li>H<b></a><sub>2</sub></b>0.</li>
+            <li>X<b><sup>2</sup></b>+2=0.</li>
+        </ul>
+    </p>
+
+    <!-- Citação e abreviação -->
+    <h2>Citação e abreviação</h2>
+    <p>Definição de citação e abreviação</p>
+    <p>tags:
+        <ul>
+            <li>q: Citação breve</li> <!-- q -->
+            <h4>Exemplo:</h4>
+            <p>Segundo Friedrich Nietzsche:
+                <q>A vida vai ficando cada vez mais dura perto do topo.</q>
+            </p>
+            <li>blockquote: Citação de outra fonte</li> <!-- blockquote -->
+            <h4>Exemplo:</h4>
+            <p>
+                <blockquote cite="https://www.pensador.com/frase/MzE4NTA/">
+                    Só há duas maneiras de viver a vida: a primeira é vivê-la como se os milagres não existissem. A segunda é vivê-la como se tudo fosse milagre.
+                </blockquote>
+            </p>
+            <li>abbr: Abreviatura ou acrônimo</li> <!-- abbr -->
+            <h4>Exemplo:</h4>
+            <p>
+                O <abbr title="Exame Nacional do Ensino Médio">Enem</abbr> foi instituído em 1998, com o objetivo de avaliar o desempenho escolar dos estudantes
+            </p>
+            <li>address: Elemento de contato</li> <!-- address -->
+            <h4>Exemplo:</h4>
+            <p>
+                <address>
+                    Endereço: Rua Pedro Vicente, nº 625 - Canindé, São Paulo - SP.
+                    Site: spo.ifsp.edu.br
+                </address>
+            </p>
+            <li>cite: Título de obra</li> <!-- cite -->
+            <h4>Exemplo:</h4>
+            <p>
+                <img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/17C16/production/_117320379_giocondacerca.jpg" height="250" width="200">
+                <cite>Monalisa</cite> por Leonardo Da Vinci, também conhecida como A Gioconda.
+            </p>
+            <li>bdo: Direção do texto</li> <!-- bdo -->
+            <p>Esse possui dois atributos: rtl (Da direita para a esquerda), e ltr (Da esquerda para a direita)</p>
+            <h4>Exemplo:</h4>
+            <ul>
+                <li>rtl</li> <!-- rtl -->
+                <bdo dir="rtl">Texto da direita para esquerda</bdo>
+                <li>ltr</li> <!-- ltr -->
+                <bdo dir="ltr">Texto da esquerda para direita</bdo>
+            </ul>
+        </ul>
+
+    </p>
+
+    <!-- Tag <iframe> -->
+    <h2>Tag de iframes</h2>
+    <p>
+        Iframes são utilizados para definir uma página qualquer da web dentro de outra, possui os seguintes atributos:
+        <ul style="list-style-type: disc;">
+            <li>width: Comprimento da página</li>
+            <li>height: Altura da página</li>
+            <li>src: Link da segunda página da web</li>
+        </ul>
+    </p>
+    <h3>Exemplo: </h3>
+    <p>Página da web, que mostra como qualquer desenvolvedor deveria se comportar em um projeto:</p>
+    <iframe src="https://gohorseprocess.com.br/extreme-go-horse-xgh/" width="600" height="400" name="eXtremeorse"></iframe>
+
+    <!-- Tags: <video>, <audio> e <source> -->
+    <h2>Media (Video e Áudio)</h2>
+    <!-- Tag <video> -->
+    <h3>Video</h3>
+    <p>
+        Para inserir um video em um documento HTML, utiliza-se a tag "video" que possui os seguintes atributos:
+        <ul>
+            <!-- Atributos de <video> -->
+            <li>width: Determina o comprimento</li>
+            <li>height: Determina a altura</li>
+            <li>controls: Exibe as opções de controle do vídeo</li>
+            <li>autoplay: Inicia o vídeo ao carregar a página</li>
+            <li>src: Define a URL do vídeo <b>(Dentro da tag source)</b></li>
+            <li>type: Define o tipo de video <b>(Dentro da tag source)</b></li>
+        </ul>
+    </p>
+    <h4>Exemplo:</h4>
+    <video width="500" height="300" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    </video>
+    <!-- Tag <audio> -->
+    <h3>Áudio</h3>
+    <p>
+        Para inserir um áudio em um documento HTML, utiliza-se a tag "audio" que possui os seguintes atributos:
+        <ul>
+            <!-- Atributos de <audio> -->
+            <li>controls: Exibe as opções de controle do áudio</li>
+            <li>autoplay: Inicia o áudio ao carregar a página</li>
+            <li>src: Define a URL do áudio <b>(Dentro da tag source)</b></li>
+            <li>type: Define o tipo de áudio <b>(Dentro da tag source)</b></li>
+        </ul>
+    </p>
+    <h4>Exemplo:</h4>
+    <p>Áudio de cavalo:</p>
+    <audio controls>
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Tag <link> -->
+    <h2>Favicon</h2>
+    <p>
+        Favicon é a junção da palavra <em>favorite</em> e <em>icon</em>. Com essa tag é possível a inserção de icones
+        ou seja, a insercão de pequenas imagens. A tag link possui os seguintes atributos:
+        <ul>
+            <li>rel: Indica o tipo de arquivo que foi inserido</li>
+            <li>href: Determina o local da imagem</li>
+            <li>size: Determina o tamanho da imagem</li>
+        </ul>
+        Essa tag deve ficar no head do documento HTML.
+    </p> 
+
+</body>
+</html>
