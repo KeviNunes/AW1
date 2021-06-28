@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <!-- Titulo da página -->
+    <h1>Preencha o seguinte formulário</h1>
+    
+    <form>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <!-- Nome -->
+            <label for="name">Nome:</label>
+            <input type="text" name="name" id="name" autofocus required>
+
+            <!-- Idade -->
+            <label for="idade">Idade:</label>
+            <input required type="number" min="0" max="120" step="1" id="idade" name="idade">
+
+            <!-- Data de nascimento --><br>
+            <label for="DataNasc">Data de nascimento:</label>
+            <input type="date" name="DataNasc" id="DataNasc">
+
+            <!-- Sexo -->
+            <label for="sex">Sexo:</label>
+            <select name="sex" id="sex">
+                <option value="M">Masculino</option>
+                <option value="F">Feminino</option>
+                <option value="O">Outro</option>
+            </select>
+
+            <!-- Região do pais --><br>
+            <label for="regiao">Região do pais:</label>
+            <input list="regioes" required>
+            <datalist id="regioes">
+                <option value="Nordeste">Nordeste</option>
+                <option value="Norte">Norte</option>
+                <option value="Sul">Sul</option>
+                <option value="Sudeste">Sudeste</option>
+                <option value="Centro-Oeste">Centro-Oeste</option>
+            </datalist>
+
+            <!-- Sobre --><br>
+            <label for="sobre">Sobre:</label><br>
+            <textarea name="sobre" id="sobre" rows="6" cols="52" maxlength="120"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados de login</legend>
+
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" autocomplete="off" required>
+
+            <!-- Username --><br>
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username">
+
+            <!-- Senha --><br>
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" required>
+
+
+
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+
+
+</body>
+</html>
