@@ -1,0 +1,47 @@
+section {
+    margin: 2rem 4rem 4rem 4rem;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+div#container2.container {
+    display: grid;
+    grid-template-columns: 25% 75%;
+
+    justify-content: center;
+}
+
+div#container2.container div{
+    display: flex;
+    justify-content: center;
+}
+
+li.titulo-conteudo {
+    font-family: 'Overlock';
+    font-weight: 700;
+    font-size: 3.375rem;
+    margin-left: 4rem;
+}
+
+.ul-title {
+    list-style: initial;
+}
+
+/* Imagens */
+#lic {
+    height: 7.8125rem;
+    width: auto;
+}
+
+#cod {
+    height: 8.5625rem;
+    width: auto;
+
+
+}

@@ -1,0 +1,120 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* BASE */
+.texto-conteudo {
+    font-family: 'Overlock';
+    color: black;
+    font-size: 3.125rem;
+}
+
+.titulo {
+    font-family: 'Oleo Script';
+    font-size: 3.75rem;
+    text-align: center;
+}
+
+.legenda {
+    font-family: "Roboto";
+    font-size: 1,5625rem;
+}
+
+/* CABEÇALHO */
+.cabecalho {
+    position: absolute;
+    visibility: visible;
+    top: 0;
+    right: 0;
+    width: 100%;
+    font-family: 'Kaushan Script';
+    text-align: center;
+    background-color: #1A1A1A;
+    color: white;
+}
+
+#sitename {
+    background-color: #1A1A1A;
+    color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    font-family: 'Kaushan Script';
+    text-align: center;
+    z-index: 1;
+}
+
+#sitename-titulo {
+    font-weight: normal;
+    margin-top: .9rem;
+    padding-bottom: 0rem;
+    margin-bottom: 0rem;
+    font-size: 4.0625rem;
+}
+
+#sitename-subtitulo {
+    font-family: "Allura";
+    font-weight: lighter;
+    font-size: 3.75rem;
+    margin-top: -1.0625rem;
+}
+
+/* MENU */
+#menu {
+    border-style: solid;
+    border-color: white;
+    border-left: transparent;
+    border-right: transparent;
+    margin-top: -1rem;
+    margin-bottom: .5rem;
+}
+
+ul.menu { 
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+ul.menu li {
+    font-family: 'Oleo Script';
+    font-size: 2.8125rem;
+}
+
+#spacer1 {
+    height: 11.875rem;
+}
+
+#spacer2 {
+    height: 19rem;
+}
+
+/* FOTO */
+.Imagem {
+    text-align: center;
+}
+
+.Imagem img {
+    border-radius: 50%;
+    align-self: center;
+    height: 28.75rem;
+    width: auto;
+}

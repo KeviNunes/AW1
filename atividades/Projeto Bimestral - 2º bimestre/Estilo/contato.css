@@ -1,0 +1,95 @@
+section {
+    margin-top: 5rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+
+    display: grid;
+    column-gap: 8rem;
+    
+    align-items: center;
+    
+    grid-template-columns: 50% 50%;
+    grid-row: 2rem 2rem 2rem;
+    grid-template-areas: 
+        "parte1 parte4"
+        "parte2 parte5"
+        "parte3 ."
+    ;
+}
+
+ul.conteudo {
+    list-style: initial;
+}
+
+.li p {
+    margin-bottom: 4rem;
+}
+
+div#icones {
+    position: relative;
+    left: 5rem;
+
+    display: grid;
+    column-gap: 8rem;
+    row-gap: 4rem;
+    grid-template-areas: 
+        "git what email"
+        "insta link lic"
+    ;
+    width: 27rem;
+    justify-content: center;
+}
+
+/* Divisões */
+#parte1{
+    grid-area: parte1;
+}
+#parte2{
+    grid-area: parte2;
+}
+#parte3{
+    grid-area: parte3;
+}
+#parte4{
+    grid-area: parte4;
+}
+#parte5{
+    grid-area: parte5;
+}
+
+/* Icones */
+.icone {
+    position: relative  ;
+}
+
+#git {
+    width: 6.75rem;
+    height: auto;
+}
+
+#what {
+    width: 7.3125rem;
+    height: auto;
+}
+
+#email {
+    width: 6.5rem;
+    height: auto;
+    top: 1.5rem;
+}
+
+#insta {
+    width: 5.9375rem;
+    height: auto;
+}
+
+#link {
+    width: 5.4375rem;
+    height: auto;
+    left: .5rem;
+}
+
+#lic {
+    width: 5.6875rem;
+    height: auto;
+}

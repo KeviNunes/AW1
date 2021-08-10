@@ -1,0 +1,24 @@
+section {
+    position: relative;
+    margin-top: 5rem;
+    margin-left: 5rem;
+}
+
+h1 {
+    margin-left: -2rem;;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-left: .8rem;
+}
+
+ul#content {
+    list-style: initial;
+}
+
+.titulo-overlock {
+    font-family: 'Overlock';
+    font-weight: 700;
+    font-size: 3.125rem;
+}

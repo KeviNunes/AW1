@@ -1,0 +1,95 @@
+section {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-rows: 360px 500px 300px 600px 350px 425px;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+        "parte1"
+        "parte2"
+        "parte3"
+        "parte4"
+        "parte5"
+        "parte6"
+    ;
+}
+
+.grid {
+    position: relative;
+    display: inline-flex;
+    justify-content: space-between;
+
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.grid.parte1{
+    grid-area: "parte1";
+    display: inline;
+}
+
+.parte2{
+    grid-area: "parte2";
+    justify-content: center;    
+}
+
+.parte3{
+    grid-area: "parte3";
+    top: 6rem;
+}
+
+.parte4{
+    grid-area: "parte4";
+    
+}
+
+div.parte5{
+    grid-area: "parte5";
+    align-items: flex-start;
+    height: 23rem;
+    bottom: 1.5rem;
+}
+
+div.parte6{
+    grid-area: "parte6";
+    margin-top: 1rem;
+
+    justify-content: center;
+    
+}
+
+.legenda {
+    grid-area: "legenda";
+    font-family: "Roboto";
+    font-size: 2rem;
+
+    max-width: 37.375rem;
+
+    position: relative;
+    align-self: center;
+    text-align: center;
+}
+
+#foto {
+    margin-right: -5rem;
+}
+
+#legenda {
+    text-align: left;
+}
+
+#irmao {
+    width: 37.375rem;
+    height: auto;
+}
+
+#fotoIrmao {
+    position: absolute;
+    right: 3.75rem;
+}
+
+#pais {
+    width: 31.25rem;
+    height: auto;
+}
+
