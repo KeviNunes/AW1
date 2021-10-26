@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="./css/footer.css" rel="stylesheet" />
+    <link href="./css/header.css" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <link href="./css/contact.css" rel="stylesheet" />
+
+
+    <title>Contato</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="brand-name">
+                    <a href="./index.html#home" class="logo">Kevin Nunes</a>
+                </div>
+                <div class="menu">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <div class="navbar">
+                    <ul>
+                        <li><a href="./index.html#home">Home</a></li>
+                        <li><a href="./sobre.html#sobre">Sobre</a></li>
+                        <li><a href="./academia.html#certificados">Certificados</a></li>
+                        <li><a href="./hobbies.html#blog">Hobbies</a></li>
+                        <li><a href="./contato.html#contato" class="active">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="title text-center">
+                    <h1>Entre em contato</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="contact-form">
+                    <form id="contato-send" onsubmit="sendEmail()">
+                        <div class="row">
+                            <div class="contact-text">
+                                <h2>Manda um email</h2>
+                                <p>Pode mandar um email apenas para colocar o papo em dia ou sobre assuntos profissionais</p>
+                            </div>
+                        </div>
+                        <div class="row space-between">
+                            <div class="col-6">
+                                <input type="text" class="form-control" id="nome-contato" placeholder="Nome" />
+                            </div>
+                            <div class="col-6">
+                                <input type="text" class="form-control" id="email-contato" placeholder="Seu email" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <textarea class="form-control" id="body-contato" placeholder="Sua mensagem"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="button btn">
+                                <input class="submit" type="submit" value="Mandar mensagem">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="rodape-logo">Kevin Nunes</div>
+                <div class="social-link">
+                    <a href="https://www.facebook.com/profile.php?id=100010480066677"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/ft.nunes/"><i class="fa fa-instagram"></i></a>
+                    <a href="https://twitter.com/KeviNunes"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/kevinunes/"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://github.com/KeviNunes"><i class="fa fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./JS/script.js"></script>
+</body>
+
+</html>
