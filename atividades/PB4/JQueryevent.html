@@ -1,25 +1,28 @@
 <html>
+
 <head>
-<script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
+
 <body>
-Selecione seu personagem favorite:
-<select name="Comics" multiple="multiple">
-<option>Thor</option>
-<option>Hulk</option>
-<option>Spider man </option>
-<option>Batman</option>
-</select>
-<div></div>
-<script>
-$("select").change(function () {
-var escolhido = "";
-$("select option:selected").each(function () {
-Escolhido += $(this).text() + " ";
-});
- alert("Você prefere o "+escolhido);
-})
-.change();
-</script>
+    <div></div>
+    Selecione seu personagem favorite:
+    <select id="Comics" multiple="multiple">
+        <option>Thor</option>
+        <option>Hulk</option>
+        <option>Spider man</option>
+        <option>Batman</option>
+    </select>
+    </div>
+    <script>
+        $("#Comics").change(function() {
+                $("select option:selected").each(function() {
+                    alert("Você prefere o " + $(this).text());
+                });
+
+            })
+            .change();
+    </script>
 </body>
+
 </html>
