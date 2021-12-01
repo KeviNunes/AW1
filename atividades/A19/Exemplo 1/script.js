@@ -40,9 +40,9 @@ function bestRockSong(response) {
 //         console.log(err.msg)
 //     })
 
-async function doTheJob(band) {
+async function doTheJob() {
     try {
-        const bestRockBandResponse = await bestRockBand(band)
+        const bestRockBandResponse = await bestRockBand('Queen')
         console.log(bestRockBandResponse)
         const bestRockSongResponse = await bestRockSong(bestRockBandResponse)
         console.log(bestRockSongResponse)
